@@ -1,0 +1,285 @@
+* {
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #101010;
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-item {
+   padding-right: 250px;
+   padding-top: -100px;
+   
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 11rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+.container{
+    padding-top: 50px;
+    padding-bottom: 500px;
+    max-width: 400px;
+    border-radius: 30px;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #FBA808;
+}
+
+.form-group{
+    margin-top: 30px;
+}
+
+.form-btn {
+    margin-top: 30px;
+}
+
+.reg {
+    margin-top: 30px;
+}
+
+.btn {
+    margin-top: -1px;
+    font-size: 14px;
+    width: 10rem;
+}
+
+
+
+.cntct {
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+
+}
+
+
+.img {
+    display: flex;
+    padding-left: 150px;
+    width: auto;
+    height: 70px;
+}
+
+.one {
+    width: auto;
+    height: 70px;
+}
+
+.vctr {
+    color: white;
+}
+/* home Section */
+
+.home-page {
+    background-color:#FBA808;
+    height: 100%;
+    padding: 8rem 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .scarlet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around ;
+        gap: 10px;
+    }
+
+    .menu {
+        height: 130px;
+        width: 170px;
+        border-radius: 5px;
+    }
+
+
+    
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .scarlet {
+        display: flex;
+        align-items: center;
+        justify-content:space-around ;
+    }
+
+    .menu {
+        height: 150px;
+        width: 200px;
+        border-radius: 5px;
+    }
+}
+
+.btnnn {
+    background-color: #B0EE4B;
+    padding: 10px 2rem;
+    border-radius: 25px;
+    border: solid 1px black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+.medina {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    
+}
+
+.gabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.gaps{
+    width: 160px;
+    height: 110px;
+    gap: 1rem;
+}
+
+/* mob */
+@media only screen and (max-width: 767px) {
+
+    .medina {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 13rem;
+        
+    }
+
+    .gabs {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .gaps{
+        width: 180px;
+        height: 130px;
+        gap: 1rem;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        background-color: #101010;
+        
+    }
+}
